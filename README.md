@@ -82,7 +82,7 @@ Users should be able to:
 
 This project was an excellent opportunity to deepen my React skills, particularly in managing complex state interactions and creating intuitive user interfaces. Here are some key learnings:
 
-1. Smart Quantity Management Logic
+1\. Smart Quantity Management Logic
 
 One of the most interesting challenges was implementing the quantity selector to intelligently update the cart. Instead of simply adding the selected quantity, we calculate the difference between what's displayed and what's already in the cart:
 
@@ -116,7 +116,7 @@ const handleIncrement = () => {
 
 ```
 
-1. Auto-close Timeout Pattern
+2\. Auto-close Timeout Pattern
 
 Implementing an auto-close feature for the quantity selector required careful timeout management:
 
@@ -156,7 +156,7 @@ useEffect(() => {
 
 ```
 
-1. Click Outside Detection
+3\. Click Outside Detection
 
 Learning to detect and handle clicks outside a component was crucial for good UX:
 
@@ -188,7 +188,7 @@ useEffect(() => {
 
 ```
 
-1. Props Drilling vs. Component Composition
+4\. Props Drilling vs. Component Composition
 
 I learned the importance of passing the right props down to child components. Initially, the decrement function wasn't working because `onUpdateQuantity` and `cartItem` weren't being passed to `ProductCard`:
 
