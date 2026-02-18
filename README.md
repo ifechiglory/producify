@@ -52,8 +52,6 @@ Users should be able to:
 
 ![Screenshot](/public/assets/images//screenshot.jpg)
 
-*Add a screenshot of your completed project here. You can use Firefox's screenshot tool or a tool like FireShot to capture your project.*
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
