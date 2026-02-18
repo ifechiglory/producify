@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('/assets/fonts/static/RedHatText-Regular.ttf') format('truetype'),
+         url('/assets/fonts/static/RedHatText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'RedHatText';
+    src: url('/assets/fonts/static/RedHatText-SemiBold.ttf') format('truetype'),
+         url('/assets/fonts/static/RedHatText-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'RedHatText';
+    src: url('/assets/fonts/static/RedHatText-Bold.ttf') format('truetype'),
+         url('/assets/fonts/static/RedHatText-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --font-primary: 'RedHatText', system-ui, -apple-system, sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+    background-color: #f4edeb;
+  }
