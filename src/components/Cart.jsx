@@ -45,10 +45,7 @@ const Cart = ({ cartItems, onRemoveItem, onClearCart }) => {
               className="mx-auto mb-4 w-24 h-24"
               aria-hidden="true"
             />
-            <p className="text-gray-500">Your cart is empty</p>
-            <p className="text-sm text-gray-400 mt-2">
-              Add some delicious desserts!
-            </p>
+            <p className="text-gray-500">Your added items will appear here</p>
           </div>
         ) : (
           <>

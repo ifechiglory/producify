@@ -172,11 +172,11 @@ const ProductCard = ({ product, onAddToCart, onUpdateQuantity, cartItem }) => {
         <p className="text-gray-400 text-sm">{category}</p>
         <h3
           id={`product-${name.replace(/\s+/g, "-")}-title`}
-          className="font-semibold text-gray-800 mt-1"
+          className="font-semibold text-gray-800"
         >
           {name}
         </h3>
-        <p className="text-[#c73a0f] text-lg font-bold mt-1">
+        <p className="text-[#c73a0f] text-lg font-bold">
           <span className="sr-only">Price:</span> ${price.toFixed(2)}
         </p>
       </div>
