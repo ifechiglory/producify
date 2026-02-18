@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "./components/ProductCard";
 import Cart from "./components/Cart";
+import axios from "axios";
 
 function App() {
   const [products, setProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/data.json");
-        const data = await response.json();
-        setProducts(data);
-        setLoading(false);
+        const response = await axios.get("/data.json");
+        setProducts(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
-        setLoading(false);
       }
     };
 
@@ -68,17 +65,7 @@ function App() {
     setCartItems([]);
   };
 
-  if (loading) {
-    return (
-      <main
-        role="status"
-        aria-label="Loading"
-        className="flex justify-center items-center h-screen"
-      >
-        <p className="text-xl text-gray-600">Loading delicious desserts...</p>
-      </main>
-    );
-  }
+
 
   return (
     <main className="p-5 min-h-screen bg-[#f4edeb]">
