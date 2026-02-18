@@ -50,7 +50,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot]('/assets/images/screenshot.png')
 
 *Add a screenshot of your completed project here. You can use Firefox's screenshot tool or a tool like FireShot to capture your project.*
 
@@ -118,7 +118,7 @@ const handleIncrement = () => {
 
 ```
 
-2. Auto-close Timeout Pattern
+1. Auto-close Timeout Pattern
 
 Implementing an auto-close feature for the quantity selector required careful timeout management:
 
@@ -158,7 +158,7 @@ useEffect(() => {
 
 ```
 
-3. Click Outside Detection
+1. Click Outside Detection
 
 Learning to detect and handle clicks outside a component was crucial for good UX:
 
@@ -190,7 +190,7 @@ useEffect(() => {
 
 ```
 
-4. Props Drilling vs. Component Composition
+1. Props Drilling vs. Component Composition
 
 I learned the importance of passing the right props down to child components. Initially, the decrement function wasn't working because `onUpdateQuantity` and `cartItem` weren't being passed to `ProductCard`:
 
